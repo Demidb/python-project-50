@@ -1,2 +1,2 @@
 poetry run gendiff -- …:
-	poetry run diff.py
+	poetry run gendiff.py
