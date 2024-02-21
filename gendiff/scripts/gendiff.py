@@ -11,7 +11,6 @@ def main():
     args = parser.parse_args()
     print(f'Comparing {args.first_file} with {args.second_file} using format {args.format}.')
 
-    # TODO: Implement the comparison logic with respect to args.format
 
 if __name__ == '__main__':
     main()
