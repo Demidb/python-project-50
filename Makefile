@@ -1,6 +1,11 @@
-poetry run gendiff -- …:
-	poetry run gendiff.py
+install:
+	poetry install
 
-poetry run make test-coverage:
-	make test-coverage
-	
+test:
+	poetry run pytest
+
+test-coverage:
+	poetry run pytest
+
+lint:
+	poetry run flake8 hexlet_python_package
