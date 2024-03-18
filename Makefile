@@ -8,4 +8,4 @@ test-coverage:
 	poetry run pytest
 
 lint:
-	poetry run flake8 hexlet_python_package
+	poetry run flake8
