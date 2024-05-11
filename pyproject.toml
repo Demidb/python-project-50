@@ -4,6 +4,7 @@ version = "0.1.0"
 description = ""
 authors = ["Demid <lliker1337@gmail.com>"]
 readme = "README.md"
+
 packages = [
   { include = "gendiff" },
 ]
@@ -11,6 +12,8 @@ packages = [
 [tool.poetry.dependencies]
 python = "^3.10.12"
 
+[tool.poetry.scripts]
+gendiff = "gendiff.scripts.generate_differance:main"
 
 [build-system]
 requires = ["poetry-core"]
