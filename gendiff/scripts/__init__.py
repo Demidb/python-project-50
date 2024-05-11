@@ -1,1 +1,4 @@
-from gendiff.diff_with_formatter 
+from gendiff.diff_builder import generate_diff
+
+
+__all__ = ('generate_diff',)
