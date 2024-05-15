@@ -1,5 +1,7 @@
-#!/usr/bin/env python
-import argparse
+#!/usr/bin/env python3
+import os
 
-if __name__ == '__main__':
-    main()
+
+def get_extension(file_path):
+    extension = os.path.splitext(file_path)[1]
+    return extension[1:]

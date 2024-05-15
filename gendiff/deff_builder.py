@@ -1,7 +1,7 @@
-from .consts import NESTED, DELETED, ADDED, UNCHANGED, CHANGED
-from .parser import parse_data
-from .gendiff import get_extension
-from .formatters.select_format import format
+from gendiff.consts import NESTED, DELETED, ADDED, UNCHANGED, CHANGED
+from gendiff.parser import parse_data
+from gendiff.scripts.gendiff import get_extension
+from gendiff.formatters.select_format import format
 
 
 def generate_diff(path1, path2, formatters='stylish'):
