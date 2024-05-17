@@ -1,7 +1,7 @@
 import os
 from .parser import parse_data
 from .formatters.select_format import format
-from .deff_builder import create_diff_tree
+from .diff_builder import create_diff_tree
 
 
 def get_extension(file_path):
