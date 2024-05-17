@@ -15,4 +15,3 @@ lint:
 
 test-coverage:
 	poetry run python3 -m pytest --cov-report xml --cov=gendiff_test
-	
