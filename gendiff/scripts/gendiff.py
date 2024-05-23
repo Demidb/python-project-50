@@ -1,4 +1,5 @@
 import os
+from tests.gendiff_test import get_fixtures_path
 
 
 def get_extension(file_name):
