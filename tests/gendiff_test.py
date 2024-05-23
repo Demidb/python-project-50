@@ -1,6 +1,16 @@
-from gendiff.gendiff import generate_diff
+from gendiff.gendiff_file import generate_diff
 import pytest
+import os
 
+
+def get_fixtures_path(file_name):
+    current_dir = os.path.dirname(__file__)
+    return os.path.join(current_dir, 'fixtures', file_name)
+
+
+def get_dt(exp_result):
+    with open(get_fixtures_path(exp_result), "r") as correct:
+        return correct.read()
 
 PATH_FILE1_YAML = 'tests/fixtures/file1.yml'
 PATH_FILE2_YAML = 'tests/fixtures/file2.yml'
@@ -45,8 +55,11 @@ JSON_PATH_FILES_JSON_NEST = 'tests/fixtures/expected_json_format2.txt'
         (PATH_FILE3_JSON, PATH_FILE4_JSON, JSON_PATH_FILES_JSON_NEST, 'json'),
     ]
 )
-def test_gendiff(path_file1, path_file2, check_file_path, format):
-    result = generate_diff(path_file1, path_file2, format)
+def test_gendiff(file1, file2):
+    path1 = get_fixtures_path(file1)
+    path2 = get_fixtures_path(file2)
 
-    with open(check_file_path) as check_file:
-        assert result == check_file.read()
+    assert generate_diff(path1, path2, 'stylish') == get_dt('exp_stylish.txt')
+    assert generate_diff(path1, path2, 'plain') == get_dt('exp_plain.txt')
+    assert generate_diff(path1, path2, 'json') == get_dt('exp_json.txt')
+    assert generate_diff(path1, path2) == get_dt('exp_stylish.txt')
