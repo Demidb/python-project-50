@@ -2,7 +2,7 @@ import os
 from tests.gendiff_test import get_fixtures_path
 
 
-def get_extension(file_name):
+def generate_diff(file_name):
     current_dir = os.path.dirname(__file__)
     return os.path.join(current_dir, 'fixtures', file_name)
 
