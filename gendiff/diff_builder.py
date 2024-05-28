@@ -1,6 +1,6 @@
 from gendiff.consts import NESTED, DELETED, ADDED, UNCHANGED, CHANGED
 from gendiff.parser import parse_data
-from gendiff.scripts.gendiff import get_extension
+from gendiff.gendiff import get_extension
 from gendiff.formatters.select_format import format
 
 
