@@ -1,4 +1,3 @@
-from gendiff.scripts.gendiff import generate_diff
 import pytest
 import os
 
