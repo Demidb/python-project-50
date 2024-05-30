@@ -21,8 +21,11 @@ def create_diff_tree(file1, file2):
     for key in keys:
         if key not in file2:
             result[key] = {'type': DELETED, 'value': file1[key]}
-        elif key not in file1:
-            result[key] = {'type': ADDED, 'value': file2[key]}
+        if key not in file1:
+            diff[key] = {
+                'type': 'added',
+                'value': file2[key]
+            }
 
         elif isinstance(file1[key], dict) and isinstance(file2[key], dict):
             result[key] = {
