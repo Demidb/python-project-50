@@ -1,8 +1,8 @@
 common: 
   follow: false
   setting1: "Value 1"
-  setting3: null
-  setting4: "blah blah"
+  setting2: null
+  setting3: "blah blah"
   setting5: 
     key5: "value5"
   setting6: 
@@ -15,6 +15,11 @@ group1:
   foo: "bar"
   baz: "bars"
   nest: "str"
+  
+group2: 
+  abc: 12345
+  deep: 
+    id: 45
 
 group3: 
   deep: 

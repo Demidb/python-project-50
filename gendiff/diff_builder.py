@@ -22,7 +22,7 @@ def create_diff_tree(file1, file2):
         if key not in file2:
             result[key] = {'type': DELETED, 'value': file1[key]}
         if key not in file1:
-            diff[key] = {
+            result[key] = {
                 'type': 'added',
                 'value': file2[key]
             }

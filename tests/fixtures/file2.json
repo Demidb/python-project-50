@@ -2,9 +2,9 @@
   "common": {
     "follow": false,
     "setting1": "Value 1",
-    "setting3": null,
+    "setting2": null,
     "setting4": "blah blah",
-    "setting5": {
+    "setting3": {
       "key5": "value5"
     },
     "setting6": {
@@ -20,7 +20,8 @@
     "baz": "bars",
     "nest": "str"
   },
-  "group3": {
+  "group2": {
+    "abc": 12345,
     "deep": {
       "id": {
         "number": 45
