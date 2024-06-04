@@ -35,21 +35,21 @@ def stylish(data):
         result = []
         for key, value in data.items():
             match value['type']:
-                case gendiff.consts.DELETED:
+                case gendiff.consts.TYPES.DELETED:
                     result.append(f'{build_indent(depth)}- {key}: '
                                   f'{to_str(value["value"], depth + 1)}')
-                case gendiff.consts.ADDED:
+                case gendiff.consts.TYPES.ADDED:
                     result.append(f'{build_indent(depth)}+ {key}: '
                                   f'{to_str(value["value"], depth + 1)}')
-                case gendiff.consts.CHANGED:
+                case gendiff.consts.TYPES.CHANGED:
                     result.append(f'{build_indent(depth)}- {key}: '
                                   f'{to_str(value["old_value"], depth + 1)}')
                     result.append(f'{build_indent(depth)}+ {key}: '
                                   f'{to_str(value["new_value"], depth + 1)}')
-                case gendiff.consts.UNCHANGED:
+                case gendiff.consts.TYPES.UNCHANGED:
                     result.append(f'{build_indent(depth)}  {key}: '
                                   f'{to_str(value["value"], depth + 1)}')
-                case gendiff.consts.NESTED:
+                case gendiff.consts.TYPES.NESTED:
                     result.append(f'{build_indent(depth)}  {key}: '
                                   f'{_it_stylish(value["value"], depth + 1)}')
                 case _:
