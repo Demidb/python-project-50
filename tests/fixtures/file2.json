@@ -2,9 +2,9 @@
   "common": {
     "follow": false,
     "setting1": "Value 1",
-    "setting2": null,
+    "setting3": null,
     "setting4": "blah blah",
-    "setting3": {
+    "setting5": {
       "key5": "value5"
     },
     "setting6": {
@@ -14,19 +14,4 @@
         "wow": "so much"
       }
     }
-  },
-  "group1": {
-    "foo": "bar",
-    "baz": "bars",
-    "nest": "str"
-  },
-  "group2": {
-    "abc": 12345,
-    "deep": {
-      "id": {
-        "number": 45
-      }
-    },
-    "fee": 100500
-  }
-}
+  }}
