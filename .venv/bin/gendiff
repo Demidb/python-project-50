@@ -1,0 +1,6 @@
+#!/home/demid/python-project-50/.venv/bin/python
+import sys
+from gendiff.scripts.generate_differance import main
+
+if __name__ == '__main__':
+    sys.exit(main())
