@@ -1,0 +1,21 @@
+{
+  "tests/gendiff_test.py::test_json_stylish": true,
+  "tests/gendiff_test.py::test_yaml_stylish": true,
+  "tests/gendiff_test.py::test_nest_json_stylish": true,
+  "tests/gendiff_test.py::test_nest_yaml_stylish": true,
+  "tests/gendiff_test.py::test_json_plain": true,
+  "tests/gendiff_test.py::test_yaml_plain": true,
+  "tests/gendiff_test.py::test_nest_json_plain": true,
+  "tests/gendiff_test.py::test_nest_yaml_plain": true,
+  "tests/gendiff_test.py::test_json_json": true,
+  "tests/gendiff_test.py::test_yaml_json": true,
+  "tests/gendiff_test.py::test_nest_json_json": true,
+  "tests/gendiff_test.py::test_nest_yaml_json": true,
+  "tests/gendiff_test.py::test_gendiff[tests/fixtures/file1.yml-tests/fixtures/file2.yml-tests/fixtures/expected.txt-stylish]": true,
+  "tests/gendiff_test.py::test_gendiff[tests/fixtures/file1.yml-tests/fixtures/file2.yml-tests/fixtures/expected_plain_format1.txt-plain]": true,
+  "tests/gendiff_test.py::test_gendiff[tests/fixtures/file1.yml-tests/fixtures/file2.yml-tests/fixtures/expected_json_format1.txt-json]": true,
+  "tests/gendiff_test.py::test_gendiff[tests/fixtures/file3.yml-tests/fixtures/file4.yml-tests/fixtures/expected_nested.txt-stylish]": true,
+  "tests/gendiff_test.py::test_gendiff[tests/fixtures/file3.yml-tests/fixtures/file4.yml-tests/fixtures/expected_plain_format2.txt-plain]": true,
+  "tests/gendiff_test.py::test_gendiff[tests/fixtures/file3.yml-tests/fixtures/file4.yml-tests/fixtures/expected_json_format2.txt-json]": true,
+  "tests/gendiff_test.py::test_gendiff[file1.yml-file2.yml]": true
+}
