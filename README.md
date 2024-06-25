@@ -5,7 +5,7 @@
 [![hexlet-check](https://github.com/Demidb/python-project-50/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Demidb/python-project-50/actions/workflows/hexlet-check.yml)
 
 ### Main Actions
-[![main-check](https://github.com/Demidb/python-project-50/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Demidb/python-project-50/actions/workflows/main.yml)
+[![main-check](https://github.com/Demidb/python-project-50/actions/workflows/main.yml/badge.svg)](https://github.com/Demidb/python-project-50/actions/workflows/main.yml)
 
 ### Maintainability Badge
 [![Maintainability](https://api.codeclimate.com/v1/badges/fca6b4618e70a644cdb8/maintainability)](https://codeclimate.com/github/Demidb/python-project-50/maintainability)
