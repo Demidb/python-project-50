@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = "Hexlet project 2"
+description = "Второй проект Хекслета сравнивает файлы и выводит отличия"
 authors = ["Demid <lliker1337@gmail.com>"]
 readme = "README.md"
 
