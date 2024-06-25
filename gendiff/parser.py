@@ -8,5 +8,5 @@ def parse_data(data, extension):
             return json.load(data)
         case 'yml' | 'yaml':
             return yaml.safe_load(data)
-
-    ValueError(f'Unsupported extension: {extension}')
+        case _:
+            ValueError(f'Unsupported extension: {extension}')
